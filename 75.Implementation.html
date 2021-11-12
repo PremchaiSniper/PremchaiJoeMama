@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<title>Implementation</title>
+
+<head>
+    <style>
+        body {
+             background-color: rgb(17, 16, 16);
+         }
+         #textcolorX {
+             color: rgb(189, 181, 181);
+             font-size: 20px;
+             margin-top: 5px;
+         }
+       #header {
+           font-size: 50px;
+           color:rgb(199, 199, 199);
+           text-align: center;
+           border: solid;
+              border-color: whitesmoke;
+              background-color: #111010;
+       }
+       #img1 {
+           margin-left: 400px;
+       }
+
+       #textcolor {color: rgb(141, 0, 0); font-size: 20px; margin-left: 70px;}
+ 
+ nav { 
+     width: 100%;
+     height: 100px; 
+     background-color: rgb(182, 182, 182);
+    font-weight: bold;
+ }
+ 
+ ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;
+ }
+
+ ul li a {
+     display: block;
+     text-decoration: none;
+     font-size: 18px;
+     padding: 0 20px;
+ }
+
+ ul li a:hover {
+    color:rgb(0, 195, 255);
+    border-radius: 1px;
+    background: rgb(0, 17, 255);
+ }
+
+ #p1 {
+        color: rgb(189, 186, 186);
+             font-size: 19px;
+             margin-left: 35px;
+            
+       }
+
+#imgX {
+    height: 750px;
+    width: 900px;
+    margin-right: 5000px;
+}
+
+
+h2 {
+     font-size: 25px;
+     color:rgb(199, 199, 199);
+     margin-left: 35px;
+     border: solid;
+              border-color: whitesmoke;
+              background-color: #111010;
+    display: inline-block;
+ }
+
+ #listX {
+    font-size: 19px;
+    color: rgb(189, 186, 186);
+    margin-top: 7px;
+}
+    
+#textcolorT {color: rgb(141, 0, 0); font-size: 20px; margin-left: 650px;}
+ </style>
+</head>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li id="textcolor"> <a href="71.intro.html">Intro</a></li>  
+            <li id="textcolor"> <a href="72.Analysis.html">Analysis</a></li>  
+            <li id="textcolor"> <a href="73.Design.html">Design</a></li>     
+            <li id="textcolor"> <a href="74.DevelopmentTesting.html">Development & Testing</a></li> 
+            <li id="textcolor"> <a href="75.Implementation.html">Implementation</a></li>   
+            <li id="textcolor"> <a href="76.Documentation.html">Documentation</a></li>
+            <li id="textcolor"> <a href="77.Evaluation.html">Evaluation</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="header">Implementation</h1>
+
+    <p id="textcolorX">Once the system is fully tested, the next stage is to fully implement it. There are four common methods used for changing over from the old system to the new system</p>
+    <p id="textcolorX">Each one has advantages and disadvantages which need to be weighed up before the most appropriate method is chosen for a particular application</p>
+
+    <img id="imgX" src="https://images.znotes.org/cie/igcse/ict-0417/image050.png"/>
+
+    <h2>Direct</h2>
+    <p id="p1">The old system is stopped overnight and the new system introduced immediately</p>
+    <p id="p1"><strong>Advantages</strong></p>
+    <ol>
+        <li id="listX">The benefits are immediate</li>
+        <li id="listX">Costs are reduced - since only one system is used there is no need to pay for two sets of staff</li>
+        <li id="listX">There is less likelihood of a malfunction since the new system will have been fully tested</li>
+    </ol>
+
+    <p id="p1"><strong>Disadvantages</strong></p>
+
+    <ol>
+        <li id="listX">This method can be disastrous if the new system fails</li>
+    </ol>
+
+    <h2>Parallel Running</h2>
+    <p id="p1">The old and new systems are run side by side for a time before the new system takes over altogether</p>
+    <p id="p1"><strong>Advantages</strong></p>
+    
+    <ol>
+        <li id="listX">If the new system fails, the old system is still available as a back-up</li>
+        <li id="listX">It is possible to train staff gradually</li>
+        <li id="listX">Staff have time to get used to the new system</li>
+    </ol>
+
+    <p id="p1"><strong>Disadvantages</strong></p>
+    <ol>
+        <li id="listX">It is more expensive than direct changeover, since extra staff are needed to run both systems together</li>
+    </ol>
+
+    <h2>Pilot Implementation</h2>
+    <p id="p1">The new system is introduced into one part of the company (e.g. into a warehouse of a supermarket) and its performance assessed</p>
+    <p id="p1"><strong>Advantages</strong></p>
+    <ol>
+        <li id="listX">If the new system fails, only one part of the company is affected</li>
+        <li id="listX">It is possible to train staff in one area only, which is much faster and less costly than parallel running</li>
+        <li id="listX">The costs are also less than parallel running, since only one part of the system is being used in the pilot</li>
+    </ol>
+
+    <p id="p1"><strong>Disadvantages</strong></p>
+    <ol>
+        <li id="listX">It is more expensive than direct changeover, since each pilot scheme needs to be evaluated before the next stage is introduced</li>
+    </ol>
+
+    <h2>Phased Implementation</h2>
+    <p id="p1">Initially, only part of the new system is introduced</p>
+    <p id="p1">Only when it proves to work satisfactorily is the next part introduced, and so on, until old system is fully replaced</p>
+    <p id="p1"><strong>Advantages</strong></p>
+
+    <ol>
+        <li id="listX">If the latest part fails, it is only necessary to go back in the system to the point of failure, hence failure is not disastrous</li>
+        <li id="listX">It is possible to ensure the system works properly before expanding</li>
+    </ol>
+
+    <p id="p1"><strong>Disadvantages</strong></p>
+    <ol>
+        <li id="listX">This is more expensive than direct changeover, since it is necessary to evaluate each phase before moving to the next stage</li>
+    </ol>
+
+    
+    <nav>
+        <ul>
+            <li id="textcolorT"> <a href="CHAPTER 7.html">Back to Chapter 7</a></li>   
+        </ul>
+    </nav>

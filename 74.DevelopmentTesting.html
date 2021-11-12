@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<title>Development & Testing</title>
+
+<head>
+    <style>
+        body {
+             background-color: rgb(17, 16, 16);
+         }
+         #textcolorX {
+             color: rgb(189, 181, 181);
+             font-size: 20px;
+             margin-top: 5px;
+             margin-left: 35px;
+         }
+       #header {
+           font-size: 50px;
+           color:rgb(199, 199, 199);
+           text-align: center;
+           border: solid;
+              border-color: whitesmoke;
+              background-color: #111010;
+       }
+       #img1 {
+           margin-left: 400px;
+       }
+
+       #textcolor {color: rgb(141, 0, 0); font-size: 20px; margin-left: 70px;}
+
+       h2 {
+     font-size: 25px;
+     color:rgb(199, 199, 199);
+     margin-left: 35px;
+     border: solid;
+              border-color: whitesmoke;
+              background-color: #111010;
+    display: inline-block;
+    
+ }
+
+ #listX {
+    font-size: 19px;
+    color: rgb(189, 186, 186);
+    margin-top: 7px;
+}
+ 
+ nav { 
+     width: 100%;
+     height: 100px; 
+     background-color: rgb(182, 182, 182);
+    font-weight: bold;
+ }
+ 
+ ul li {
+    list-style: circle;
+    display: inline-block;
+    line-height: 100px;
+ }
+
+ ul li a {
+     display: block;
+     text-decoration: none;
+     font-size: 18px;
+     padding: 0 20px;
+ }
+
+ ul li a:hover {
+    color:rgb(0, 195, 255);
+    border-radius: 1px;
+    background: rgb(0, 17, 255);
+ }
+
+ #p1 {
+        color: rgb(189, 186, 186);
+             font-size: 19px;
+             margin-left: 35px;
+            
+       }
+
+       #p2 {
+        color: rgb(189, 186, 186);
+             font-size: 19px;
+             margin-left: 55px;
+            
+       }
+
+       #textcolorT {color: rgb(141, 0, 0); font-size: 20px; margin-left: 650px;}
+    
+ </style>
+</head>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li id="textcolor"> <a href="71.intro.html">Intro</a></li>  
+            <li id="textcolor"> <a href="72.Analysis.html">Analysis</a></li>  
+            <li id="textcolor"> <a href="73.Design.html">Design</a></li>     
+            <li id="textcolor"> <a href="74.DevelopmentTesting.html">Development & Testing</a></li> 
+            <li id="textcolor"> <a href="75.Implementation.html">Implementation</a></li>   
+            <li id="textcolor"> <a href="76.Documentation.html">Documentation</a></li>
+            <li id="textcolor"> <a href="77.Evaluation.html">Evaluation</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="header">Development & Testing</h1>
+
+    <p id="textcolorX">Once the design stage is completed, it is then necessary to create the system and fully test it</p>
+    <p id="textcolorX">This section considers some of the development stages and testing strategies which are often adopted by system analysts</p>
+
+    <h2>Development stages</h2>
+   
+    <ol>
+        <li id="listX">If the system contains files (e.g. a database) then the file structure needs to be finalized at this stage (e.g. what type of data is being stored in each field, length of each field, which field will be the key field, how the data files will be linked, etc.)</li>
+        <li id="listX">Once the file structure has been determined, it is then created and fully tested to make sure it is robust when the system actually goes live</li>
+        <li id="listX">Since it is important that correct data is stored in files, there are certain techniques that need to be adopted to make sure the data populating the file and database is at least of the right type & that it conforms to certain rules</li>
+        <li id="listX">Validation routines and verification methods are used to ensure this happens</li>
+        <li id="listX">Again, routines have to be fully tested to ensure they trap unwanted data but also to make sure any data transferred from a paper-based system to an electronic system has been done accurately</li>
+        <li id="listX">Any system being developed will have some form of user interface</li>
+        <li id="listX">The types of hardware were chosen in the design stage</li>
+        <li id="listX">How these are used to interface with the final system now needs to be identified, for example how the screens will be used to collect the data and the way the output will be presented</li>
+        <li id="listX">If specialist hardware is needed (e.g. for people with disabilities), then it will be necessary to finalize how these devices are used with the system when it is implemented</li>
+        <li id="listX">This will be followed by thorough testing to ensure the user screens are user friendly and that the correct output is associated with the inputs to the system</li>
+    </ol>
+
+    <h2>Testing strategies</h2>
+
+    <ol>
+        <li id="listX">Testing of each module needs to be done to ensure each one functions correctly on its own</li>
+        <li id="listX">Once the development of each module is completed, the whole system needs to be tested (i.e. all modules functioning together)</li>
+        <li id="listX">Even though each individual module may work satisfactorily, when they are all put together there may be data clashes, incompatibility and memory issues</li>
+        <li id="listX">All of this may lead to a need to improve the input and output methods, file and database structures, validation and verification methods</li>
+        <li id="listX">Then the system will need to be fully tested again</li>
+        <li id="listX">It is a very time-consuming process but the system must be as perfect as possible before it goes live</li>
+        <li id="listX">Testing will use many different types of data, which will fall into one of three categories: normal, extreme or abnormal</li>
+    </ol>
+    <p id="p1">Let us suppose one of the fields in a database is the date and this must be in the form dd/mm/yyyy, where each element of the date must be numeric:</p>
+    <p id="p2"><strong>Normal:</strong> this is data which is acceptable/valid and has an expected (known) outcome, e.g. the month can be any whole number in the range 1 to 12</p>
+    <p id="p2"><strong>Extreme:</strong>this is data at the limits of acceptability/validity, e.g. the month can be either of the two end values i.e. 1 or 12</p>
+    <p id="p2"><strong>Abnormal:</strong>this is data outside the limits of acceptability/validity and should be rejected or cause an error message</p>
+        
+
+    <nav>
+        <ul>
+            <li id="textcolorT"> <a href="CHAPTER 7.html">Back to Chapter 7</a></li> 
+        </ul>
+    </nav>
+
+    
+   
+
+   
